@@ -1,11 +1,9 @@
-var JoshsDeli = []
-
 function currentLine(line) {
   if(!line.length){
     return "The line is currently empty."
   }
   var nameAndNumberList = []
-  for (let i = 0, l = line.length; i < l; i++) {
+  for (let i = 0; i < line.length; i++) {
     nameAndNumberList.push(`${i + 1}. ${line[i]}`)
   }
   return `The line is currently: ${nameAndNumberList.join(', ')}`
